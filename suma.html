@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+<body>
+  
+        <legend>Ingrese dos numeros</legend>
+        <label for="">Numero 1:</label>
+        <input type="text" id="numero1">
+        <br><br>
+        <label for="">Numero 2:</label>
+        <input type="text" id="numero2" onkeyup="Sumar();">
+        <br><br>
+        <input type="button" onclick="Sumar();" value="Calucular">
+     
+ 
+    
+</body>
+<script>
+    function Sumar() {
+        var n1 = document.getElementById('numero1').value;
+        var n2 = document.getElementById('numero2').value;
+        var suma = parseInt(n1) + parseInt(n2);
+        alert("La suma  es: "+suma)
+    }
+</script>
+</html>
